@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #001e3c;
+  color: white;
+}
+nav {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  padding: 10px;
+  /* margin: 10px; */
+  background-color: #fbae42;
+  width: 100vw;
+  position: fixed;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #001e3c;
+}
+
+nav a:first-child {
+  padding-left: 10px;
+}
+
+.first,
+.second {
+  padding: 15px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.65em;
+}
+.first h1 {
+  margin: 50px 15px 20px 15px;
+  color: #fbae42;
+}
+
+.myPhoto img {
+  display: flex;
+  height: auto;
+  width: 80%;
+  margin: 20px auto;
+  transition: 1.5s linear;
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-content: center;
+    align-self: center;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5em;
+  }
+  .myPhoto img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  max-height: 100vh;
+  margin: 30px 10px;
+  padding: 10px;
+}
+
+form h3 {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+  color: #fbae42;
+}
+
+input {
+  width: 320px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  justify-content: center;
+  margin: 10px 10px 0px 10px;
+}
+
+.submit.reset {
+  display: inline-flex;
+  font-size: 16px;
+  margin: 5px;
+}
+
+input[type="submit"] {
+  background-color: green;
+  width: 50%;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="reset"] {
+  background-color: red;
+  width: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+textarea {
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.whatsApp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #001e3c;
+  background-color: #fbae42;
+  border-radius: 50%;
+}
+.whatsApp a {
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.fa-phone {
+  color: white;
+}
